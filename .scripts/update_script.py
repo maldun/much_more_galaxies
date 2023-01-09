@@ -5,6 +5,18 @@ from pdx_objects import Country, FallenEmpire, Ring, Arms, GalaxyShape
 from pdx_objects import replace_entry, ScenarioManager, get_original_shapes, get_entry
 from defines import *
 
+
+def snake_case_to_normal(name):
+    words = [word.capitalize() for word in name.split('_')]
+    return " ".join(words)
+    
+def write_localisation(names):
+    code = "l_english:\n"
+    for key, val in names.items():
+        code += f' {key}:0 "{val}"\n'
+
+    return code
+
 def merge_galaxy_shapes(shape_files, out_file):
     shapes = []
     for file in shape_files:
@@ -25,6 +37,7 @@ shape_minima = get_original_shapes(ORG_GALAXY_SHAPES,sm.scenarios, ORG_SCENARIO_
 
 # Define new shapes
 new_shapes = []
+new_shape_names = {}
 ## Dragon Tail
 dt_name = "dragon_tail"
 
@@ -49,8 +62,8 @@ dragon_tail = GalaxyShape(dt_name,
                           fallen_empires=dt_fallen)
 
 new_shapes += [[dragon_tail.write_pdx()]]
-
 shape_minima[dt_name] = 200
+new_shape_names[dt_name] = snake_case_to_normal(dt_name)
 
 # register all shapes
 sm.register_shapes(shape_minima)
@@ -66,5 +79,9 @@ if __name__ == "__main__":
     # update shapes
     to_merge = [ORG_GALAXY_SHAPES, NEW_GALAXY_SHAPES]
     merge_galaxy_shapes(to_merge, os.path.join(MAIN_MOD, GALAXY_PATH, SHAPE_FILE))
-    
     sm.write_scenarios()
+    # write localisation
+    os.makedirs(MOD_LOC_PATH, exist_ok=True)
+    with open(os.path.join(MOD_LOC_PATH, "mmg_l_english.yml"), 'w', encoding='utf-8-sig') as fp:
+        code = write_localisation(new_shape_names)
+        fp.write(code)

@@ -14,6 +14,9 @@ ORG_SCENARIO_PATH = os.path.join(STELLARIS_PATH, SCENARIO_PATH)
 ORG_GALAXY_SHAPES = os.path.join(STELLARIS_PATH, GALAXY_PATH, SHAPE_FILE)
 NEW_GALAXY_SHAPES = "my_new_galaxy_shapes.txt"
 
+LOC_PATH = "localisation"
+MOD_LOC_PATH = os.path.join(MAIN_MOD, LOC_PATH)
+
 # Constants
 NAME = 'name'
 PRIORITY = 'priority'

@@ -18,20 +18,32 @@ LOC_PATH = "localisation"
 MOD_LOC_PATH = os.path.join(MAIN_MOD, LOC_PATH)
 
 # Constants
+UTF8 = 'utf-8-sig'
+
 NAME = 'name'
 PRIORITY = 'priority'
 PDX_SUFF = '.txt'
 BASE = '_base'
 NUM_STARS = "num_stars"
 SUPPORTS_SHAPE = "supports_shape"
+COUNTRY = 'countries'
+FALLEN = 'fallen_empires'
+ARMS = 'arms'
+RING = 'ring'
 
-# Scenario Settings
-ssettings = {}
-ssettings['mini'] = {NUM_STARS: 100,
-                 "radius": 100,
-                 "num_empires": {"min":0, "max":4},
-                 "num_empire_default": 2,
-                 "marauder_empire_default": 0,
-                 "cluster_radius": 45,
-                 "cluster_distance_from_core": 60,
-                 }
+SHAPE_NAME = '_shape_name'
+MIN_STARS = '_min_size'
+
+NUM_ARMS = 'num_arms'
+
+IDE_SQ_DIST = 'ideal_sq_dist_between'
+MIN_SQ_DIST = 'min_sq_dist_between'
+
+TIGHT_WIND = 'tightness_winding'
+WIDTH = "width"
+FUZZ = 'fuzz'
+SEP = 'seperation'
+
+CORE_RAD = 'core_radius_perc'
+CORE_STARS = 'num_stars_core_perc'
+STARS_MIN_DIST = 'stars_min_dist'

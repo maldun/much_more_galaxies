@@ -69,7 +69,7 @@ default_fallen_empire = FallenEmpire(125**2, 75**2)
 
 class GalaxyShape(PDXObject):
     def __init__(self, identifier,
-                 core_radius_per = 0.25,
+                 core_radius_perc = 0.25,
                  num_stars_core_perc = 0,
                  stars_min_dist = 10,
                  countries = default_country,
@@ -77,7 +77,8 @@ class GalaxyShape(PDXObject):
                  ring = None,
                  num_arms = None,
                  arms = None,
-                 _min_size = 200
+                 _min_size = 200,
+                 _shape_name = None
                  ):
         if (arms is None and num_arms is not None) or (arms is not None and num_arms is None):
             raise ValueError("Error: num_arms and arms do not align! One is None!")
@@ -121,7 +122,71 @@ def get_original_shapes(org_shape_file, org_scenarios, org_scenario_path):
 
     return shapes
 
+def snake_case_to_normal(name):
+    words = [word.capitalize() for word in name.split('_')]
+    return " ".join(words)
 
+def write_localisation(names):
+    code = "l_english:\n"
+    for key, val in names.items():
+        code += f' {key}:0 "{val}"\n'
+
+    return code
+
+class ShapeManager:
+    SHAPE = '_shape'
+    SHAPE_NAME = '_shape_name'
+    MINIMAL_KEYS = {COUNTRY, FALLEN, CORE_RAD,CORE_STARS,STARS_MIN_DIST}
+    def __init__(self, org_galaxy_shapes, org_scenario_path, scenarios):
+        self.shapes = {}
+        self.shape_minima = get_original_shapes(org_galaxy_shapes, scenarios, org_scenario_path)
+
+    def add_shape(self,identifier, dic, name = None):
+        for key in self.MINIMAL_KEYS:
+            if not key in dic.keys():
+                raise ValueError(f"Error: Key {key} is missing! Check definition of Shape")
+
+        dic[COUNTRY] = Country(**dic[COUNTRY])
+        dic[FALLEN] = FallenEmpire(**dic[FALLEN])
+        arm = None
+        ring = None
+        if ARMS in dic.keys():
+            if dic[ARMS] is not None:
+                arm = Arms(**dic[ARMS])
+
+        if RING in dic.keys():
+            if dic[RING] is not None:
+                ring = Ring(**dic[RING])
+
+        dic[ARMS] = arm
+        dic[RING] = ring
+
+        self.shapes[identifier] = {self.SHAPE: GalaxyShape(identifier,**dic),
+                                           self.SHAPE_NAME:name}
+        self.shape_minima[identifier] = dic[MIN_STARS]
+
+    def write_shapes(self, out_file):
+        new_shapes = [[val[self.SHAPE].write_pdx()] for key, val in self.shapes.items()]
+        with open(out_file, 'w',encoding = UTF8) as fp:
+            code = converter.list2paradox(new_shapes)
+            fp.write(code)
+
+    def write_localisation(self, out_file):
+        names = {key:(val[SHAPE_NAME] if val[SHAPE_NAME] is not None else snake_case_to_normal(key)) for key, val in self.shapes.items()}
+        with open(out_file, 'w',encoding = UTF8) as fp:
+            code = write_localisation(names)
+            fp.write(code)
+
+    def get_shape_minima(self): return self.shape_minima
+
+    def update_min(self, identifier, num_stars):
+        self.shape_minima[identifier] = num_stars
+    
+
+        
+
+        
+        
 
 class ScenarioManager:
     def __init__(self, org_scenario_path, out_path):
@@ -136,8 +201,14 @@ class ScenarioManager:
             fname = os.path.join(org_scenario_path, name)
             sname = name.split('.')[0]
             prio = self.get_priority(fname)
-            self.scenarios[sname] = {BASE: sname, PRIORITY: prio}
+            num_stars = self.get_num_stars(fname)
+            self.scenarios[sname] = {BASE: sname, PRIORITY: prio, NUM_STARS: num_stars}
 
+    def get_scenarios(self):
+        return self.scenarios.copy()
+
+    def set_scenarios(self, scens):
+        self.scenarios = scens
     
     def rescale_scenario(self, orig, replacement_dict):
         obj = converter.paradox2list(orig)
@@ -155,6 +226,10 @@ class ScenarioManager:
         return get_entry(obj, PRIORITY)
 
     @staticmethod
+    def get_num_stars(obj):
+        return get_entry(obj, NUM_STARS)
+
+    @staticmethod
     def set_priority(obj, priority):
         fname = None
         if not isinstance(obj, list):
@@ -170,19 +245,26 @@ class ScenarioManager:
             return obj
 
     @staticmethod
-    def adapt_priorities(scenarios, prio):
-        for key, val in scenarios:
-            if int(val[PRIORITY]) >= prio:
-                val[PRIORITY] = int(val[PRIORITY]) + 1
+    def _update_priorities(scenarios):
+        scenario_list = [(key,val[NUM_STARS]) for key,val in scenarios.items()]
+        sorted_list = sorted(scenario_list, key=lambda x: x[1])
+        sorted_list = [x[0] for x in sorted_list]
+        for prio, key in enumerate(sorted_list):
+            scenarios[key][PRIORITY] = prio
         return scenarios
+
+    def update_priorities(self):
+        self.scenarios = self._update_priorities(self.scenarios)
         
-    def add_scenario(self, scenario_name, priority, base, settings):
+    def add_scenario(self, scenario_name, settings, priority = 0, base = None):
         if scenario_name in self.scenarios.keys():
             raise ValueError("Error: Scenario already defined!")
-        self.scenarios = self.adapt_priorities(self.scenarios, priority)
-        settings[BASE] = base
+        #self.scenarios = self.adapt_priorities(self.scenarios, priority)
+        if base is not None:
+            settings[BASE] = base
         settings[PRIORITY] = priority
         self.scenarios[scenario_name] = settings
+        self.update_priorities()
 
     def register_shapes(self, shape_info):
         self.shape_info = shape_info
@@ -191,8 +273,6 @@ class ScenarioManager:
         num_stars = int(get_entry(obj, NUM_STARS))
         
         for key, val in self.shape_info.items():
-            #import pdb; pdb.set_trace()
-
             if num_stars >= val:
                 found, inds = has_value(obj, key)
                 if len(found) == 0:
@@ -200,8 +280,6 @@ class ScenarioManager:
 
         return obj
 
-        
-        
     def write_scenarios(self):
         # reset out_path
         if os.path.exists(self.out_path):
@@ -212,7 +290,10 @@ class ScenarioManager:
             base = val[BASE]
             base_fname = os.path.join(self.org_scenario_path, base + PDX_SUFF)
             fval = {vkey:vval for vkey,vval in val.items() if not vkey.startswith('_') }
-            fval[NAME] = key
+            if NAME not in fval.keys():
+                fval[NAME] = '"{}"'.format(key.capitalize())
+            else:
+                fval[NAME] = '"{}"'.format(fval[NAME])
             obj = self.rescale_scenario(base_fname, fval)
             obj = self.set_shapes(obj)
             out_fname = os.path.join(self.out_path, key + PDX_SUFF)
@@ -254,6 +335,16 @@ if __name__ == "__main__":
     sm.write_scenarios()
     assert os.path.exists(os.path.join(sm.out_path, 'medium.txt'))
     shutil.rmtree(sm.out_path)
+
+    tname = 'test'
+    scenarios = sm.get_scenarios()
+    scenarios[tname] = {NUM_STARS: 400, PRIORITY:0}
+    scenarios = ScenarioManager._update_priorities(scenarios)
+    assert scenarios[tname][PRIORITY] > 0
+    sm.set_scenarios(scenarios)
+    sm.update_priorities()
+    assert sm.get_scenarios()[tname][PRIORITY] > 0
+    del sm.scenarios[tname]
     
     org_shapes = get_original_shapes(ORG_GALAXY_SHAPES,sm.scenarios, ORG_SCENARIO_PATH)
     assert org_shapes['elliptical'] == 200

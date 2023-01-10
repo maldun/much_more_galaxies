@@ -216,3 +216,19 @@ shapes['cross'] = {SHAPE_NAME: 'Cross',
                          }
 
 
+# High Barred Spiral
+shapes['barred_sbc'] = {SHAPE_NAME: 'Barred Spiral (SBc)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 70**2,
+                                IDE_SQ_DIST: 120**2},
+                         FALLEN: {MIN_SQ_DIST:125**2,
+                                   IDE_SQ_DIST:175**2},
+                         ARMS: {TIGHT_WIND: 0.6,
+                                WIDTH: 20.0,
+                                FUZZ: 5.0,
+                                SEP: 180},
+                         NUM_ARMS: 2,
+                         CORE_RAD: 0.2,
+                         CORE_STARS: 0.1,
+                         STARS_MIN_DIST:1.0
+                         }

@@ -759,10 +759,10 @@ pulsar = {
     }
     num_arms = 4
     arms = {
-        tightness_winding = 0.7
+        tightness_winding = 0.8
         width = 30
         fuzz = 10.0
-        seperation = 5
+        seperation = 30
         
     }
     

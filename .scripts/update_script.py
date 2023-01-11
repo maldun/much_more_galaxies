@@ -7,7 +7,7 @@ from pdx_objects import replace_entry, ScenarioManager, get_original_shapes, get
 import parameters as par 
 from defines import *
 
-ADD_SCENARIOS = True
+ADD_SCENARIOS = False
 
 def merge_galaxy_shapes(shape_files, out_file):
     shapes = []

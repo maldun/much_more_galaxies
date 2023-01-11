@@ -75,6 +75,35 @@ cluster2 = {
     }
     
 }
+cluster3 = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.02
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.2
+        
+    }
+    num_arms = 3
+    arms = {
+        tightness_winding = 0.0
+        width = 60.0
+        fuzz = 10.0
+        seperation = 120
+        
+    }
+    
+}
 cluster4 = {
     core_radius_perc = 0.2
     num_stars_core_perc = 0.02
@@ -127,8 +156,37 @@ cluster6 = {
     arms = {
         tightness_winding = 0.0
         width = 30.0
-        fuzz = 10.0
+        fuzz = 5.0
         seperation = 60
+        
+    }
+    
+}
+cluster8 = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.02
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.2
+        
+    }
+    num_arms = 8
+    arms = {
+        tightness_winding = 0.0
+        width = 22.5
+        fuzz = 2.0
+        seperation = 45
         
     }
     
@@ -153,6 +211,30 @@ cross = {
         width = 20.0
         fuzz = 20.0
         seperation = 90
+        
+    }
+    
+}
+disk = {
+    core_radius_perc = 0.01
+    num_stars_core_perc = 0.01
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 14400
+        min_sq_dist_between = 4900
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 30625
+        min_sq_dist_between = 15625
+        
+    }
+    num_arms = 1
+    arms = {
+        tightness_winding = 1.0
+        width = 360.0
+        fuzz = 20.0
+        seperation = 0
         
     }
     
@@ -282,6 +364,64 @@ gear = {
     }
     
 }
+half_circle = {
+    core_radius_perc = 0.1
+    num_stars_core_perc = 0.0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.3
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.0
+        width = 130.0
+        fuzz = 20.0
+        seperation = 180
+        
+    }
+    
+}
+holy_cross = {
+    core_radius_perc = 0.1
+    num_stars_core_perc = 0.1
+    stars_min_dist = 1.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.8
+        offset = 0.2
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.0
+        width = 20.0
+        fuzz = 20.0
+        seperation = 90
+        
+    }
+    
+}
 irregular_1 = {
     core_radius_perc = 0.7
     num_stars_core_perc = 0.6
@@ -365,6 +505,54 @@ irregular_3 = {
         width = 20.0
         fuzz = 30.0
         seperation = 70
+        
+    }
+    
+}
+pulsar = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0.0
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 1
+    arms = {
+        tightness_winding = 0.7
+        width = 30
+        fuzz = 10.0
+        seperation = 5
+        
+    }
+    
+}
+radio = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0.2
+    stars_min_dist = 5.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.01
+        width = 45.0
+        fuzz = 5.0
+        seperation = 180
         
     }
     

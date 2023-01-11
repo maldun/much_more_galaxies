@@ -186,6 +186,26 @@ shapes['cluster2'] = {SHAPE_NAME: 'Cluster (2)',
                          )
                          }
 
+shapes['cluster3'] = {SHAPE_NAME: 'Cluster (3)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 60.0,
+                                FUZZ: 10.0,
+                                SEP: 120},
+                         NUM_ARMS: 3,
+                         CORE_RAD: 0.2,
+                         CORE_STARS: 0.02,
+                         STARS_MIN_DIST: 2.0,
+                         RING: dict(
+                                width = 0.50,
+                                offset = 0.2
+                         )
+                         }
+
 shapes['cluster4'] = {SHAPE_NAME: 'Cluster (4)',
                          MIN_STARS: 1,
                          COUNTRY: {MIN_SQ_DIST: 50**2,
@@ -214,9 +234,29 @@ shapes['cluster6'] = {SHAPE_NAME: 'Cluster (6)',
                                    IDE_SQ_DIST:125**2},
                          ARMS: {TIGHT_WIND: 0.0,
                                 WIDTH: 30.0,
-                                FUZZ: 10.0,
+                                FUZZ: 5.0,
                                 SEP: 60},
                          NUM_ARMS: 6,
+                         CORE_RAD: 0.2,
+                         CORE_STARS: 0.02,
+                         STARS_MIN_DIST: 2.0,
+                         RING: dict(
+                                width = 0.50,
+                                offset = 0.2
+                         )
+                         }
+
+shapes['cluster8'] = {SHAPE_NAME: 'Cluster (8)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 22.5,
+                                FUZZ: 2.0,
+                                SEP: 45},
+                         NUM_ARMS: 8,
                          CORE_RAD: 0.2,
                          CORE_STARS: 0.02,
                          STARS_MIN_DIST: 2.0,
@@ -244,6 +284,23 @@ shapes['cross'] = {SHAPE_NAME: 'Cross',
                          }
 
 
+# Disk
+shapes['disk'] = {SHAPE_NAME: 'Disk',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 70**2,
+                                IDE_SQ_DIST: 120**2},
+                         FALLEN: {MIN_SQ_DIST:125**2,
+                                   IDE_SQ_DIST:175**2},
+                         ARMS: {TIGHT_WIND: 1.0,
+                                WIDTH: 360.0,
+                                FUZZ: 20.0,
+                                SEP: 0},
+                         NUM_ARMS: 1,
+                         CORE_RAD: 0.01,
+                         CORE_STARS: 0.01,
+                         STARS_MIN_DIST: 10.0
+                         }
+
 # Dragon Tail
 shapes['dragon_tail'] = {SHAPE_NAME: 'Dragon Tail',
                          MIN_STARS: 200,
@@ -260,7 +317,6 @@ shapes['dragon_tail'] = {SHAPE_NAME: 'Dragon Tail',
                          CORE_STARS: 0.25,
                          STARS_MIN_DIST:15.0
                          }
-
 
 # Fan (3)
 shapes['fan3'] = {SHAPE_NAME: 'Fan (3)',
@@ -335,6 +391,47 @@ shapes['gear'] = {SHAPE_NAME: 'Gear',
                          )
                          }
 
+# Half Circle
+shapes['half_circle'] = {SHAPE_NAME: 'Half Circle',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 130.0,
+                                FUZZ: 20.0,
+                                SEP: 180},
+                         NUM_ARMS: 2,
+                         CORE_RAD: 0.1,
+                         CORE_STARS: 0.0,
+                         STARS_MIN_DIST: 10.0,
+                         RING: dict(
+                                width = 0.50,
+                                offset = 0.3
+                             )
+                         }
+
+# Holy Cross
+shapes['holy_cross'] = {SHAPE_NAME: 'Holy Cross',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 20.0,
+                                FUZZ: 20.0,
+                                SEP: 90},
+                         NUM_ARMS: 4,
+                         CORE_RAD: 0.1,
+                         CORE_STARS: 0.1,
+                         STARS_MIN_DIST:1.0,
+                         RING: dict(
+                                width = 0.80,
+                                offset = 0.2
+                             )
+                         }
 
 # Irregular Galaxies
 shapes['irregular_1'] = {SHAPE_NAME: 'Irregular (1)',
@@ -396,6 +493,46 @@ shapes['irregular_3'] = {SHAPE_NAME: 'Irregular (3)',
                                 width = 1.50,
                                 offset = -1.30
                          )
+                         }
+
+shapes['pulsar'] = {SHAPE_NAME: 'Pulsar',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.7,
+                                WIDTH: 30,
+                                FUZZ: 10.0,
+                                SEP: 5},
+                         NUM_ARMS: 1,
+                         CORE_RAD: 0.25,
+                         CORE_STARS: 0.0,
+                         STARS_MIN_DIST: 2.0,
+                         # RING: dict(
+                         #        width = 1.50,
+                         #        offset = -1.30
+                         # )
+                         }
+
+shapes['radio'] = {SHAPE_NAME: 'Radio',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.01,
+                                WIDTH: 45.0,
+                                FUZZ: 5.0,
+                                SEP: 180},
+                         NUM_ARMS: 2,
+                         CORE_RAD: 0.25,
+                         CORE_STARS: 0.2,
+                         STARS_MIN_DIST: 5.0,
+                         # RING: dict(
+                         #        width = 1.50,
+                         #        offset = -1.30
+                         # )
                          }
 
 # Snowflake (4)

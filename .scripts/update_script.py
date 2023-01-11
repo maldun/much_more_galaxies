@@ -48,7 +48,6 @@ sm.register_shapes(gm.get_shape_minima())
 if __name__ == "__main__":
     #create_dirs
     os.makedirs(os.path.join(MAIN_MOD, GALAXY_PATH), exist_ok=True)
-    os.makedirs(os.path.join(MAIN_MOD, SCENARIO_PATH), exist_ok=True)
     # write out new shapes
     gm.write_shapes(NEW_GALAXY_SHAPES)
     # update shapes
@@ -56,6 +55,7 @@ if __name__ == "__main__":
     merge_galaxy_shapes(to_merge, os.path.join(MAIN_MOD, GALAXY_PATH, SHAPE_FILE))
     # write out scenarios
     if ADD_SCENARIOS == True:
+        os.makedirs(os.path.join(MAIN_MOD, SCENARIO_PATH), exist_ok=True)
         sm.write_scenarios()
     # write localisation
     os.makedirs(MOD_LOC_PATH, exist_ok=True)

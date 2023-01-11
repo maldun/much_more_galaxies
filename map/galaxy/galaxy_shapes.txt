@@ -744,7 +744,7 @@ irregular_3 = {
     
 }
 pulsar = {
-    core_radius_perc = 0.25
+    core_radius_perc = 0.2
     num_stars_core_perc = 0.0
     stars_min_dist = 2.0
     countries = {
@@ -757,7 +757,7 @@ pulsar = {
         min_sq_dist_between = 5625
         
     }
-    num_arms = 1
+    num_arms = 4
     arms = {
         tightness_winding = 0.7
         width = 30

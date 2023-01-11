@@ -22,7 +22,7 @@ The following shapes are added:
 
 Thumbnail: copyright by David Dayag (Wiki commons license; source https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_560mm_FL.jpg accessed on 11.01.2023)
 
-This mod draws inspiration (and some settings) from: 
+This mod draws inspiration (and some settings) from nature and: 
 
 [More Natural Looking Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=1115205349)
 [Bigger Sliders](https://steamcommunity.com/sharedfiles/filedetails/?id=2032225771)

@@ -7,6 +7,8 @@ from pdx_objects import replace_entry, ScenarioManager, get_original_shapes, get
 import parameters as par 
 from defines import *
 
+ADD_SCENARIOS = True
+
 def merge_galaxy_shapes(shape_files, out_file):
     shapes = []
     for file in shape_files:
@@ -53,7 +55,8 @@ if __name__ == "__main__":
     to_merge = [ORG_GALAXY_SHAPES, NEW_GALAXY_SHAPES]
     merge_galaxy_shapes(to_merge, os.path.join(MAIN_MOD, GALAXY_PATH, SHAPE_FILE))
     # write out scenarios
-    sm.write_scenarios()
+    if ADD_SCENARIOS == True:
+        sm.write_scenarios()
     # write localisation
     os.makedirs(MOD_LOC_PATH, exist_ok=True)
     gm.write_localisation(os.path.join(MOD_LOC_PATH, "mmg_l_english.yml"))

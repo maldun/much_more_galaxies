@@ -130,109 +130,6 @@ old_shape_minima = {
 # Shape definitions
 shapes = {}
 
-# Dragon Tail
-shapes['dragon_tail'] = {SHAPE_NAME: 'Dragon Tail',
-                         MIN_STARS: 200,
-                         COUNTRY: {MIN_SQ_DIST: 70**2,
-                                IDE_SQ_DIST: 120**2},
-                         FALLEN: {MIN_SQ_DIST:125**2,
-                                   IDE_SQ_DIST:175**2},
-                         ARMS: {TIGHT_WIND: 1.0,
-                                WIDTH: 80.0,
-                                FUZZ: 120.0,
-                                SEP: 45.3},
-                         NUM_ARMS: 1,
-                         CORE_RAD: 0.25,
-                         CORE_STARS: 0.25,
-                         STARS_MIN_DIST:15.0
-                         }
-
-# Fan (3)
-shapes['fan3'] = {SHAPE_NAME: 'Fan (3)',
-                         MIN_STARS: 1,
-                         COUNTRY: {MIN_SQ_DIST: 50**2,
-                                IDE_SQ_DIST: 75**2},
-                         FALLEN: {MIN_SQ_DIST:75**2,
-                                   IDE_SQ_DIST:125**2},
-                         ARMS: {TIGHT_WIND: 0.2,
-                                WIDTH: 30.0,
-                                FUZZ: 10.0,
-                                SEP: 120},
-                         NUM_ARMS: 3,
-                         CORE_RAD: 0.1,
-                         CORE_STARS: 0.1,
-                         STARS_MIN_DIST:15.0
-                         }
-
-# Fan (4)
-shapes['fan4'] = {SHAPE_NAME: 'Fan (4)',
-                         MIN_STARS: 1,
-                         COUNTRY: {MIN_SQ_DIST: 50**2,
-                                IDE_SQ_DIST: 75**2},
-                         FALLEN: {MIN_SQ_DIST:75**2,
-                                   IDE_SQ_DIST:125**2},
-                         ARMS: {TIGHT_WIND: 0.2,
-                                WIDTH: 30.0,
-                                FUZZ: 10.0,
-                                SEP: 90},
-                         NUM_ARMS: 4,
-                         CORE_RAD: 0.1,
-                         CORE_STARS: 0.1,
-                         STARS_MIN_DIST:15.0
-                         }
-                         
-
-# Snowflake (4)
-shapes['snowflake4'] = {SHAPE_NAME: 'Snowflake (4)',
-                         MIN_STARS: 1,
-                         COUNTRY: {MIN_SQ_DIST: 50**2,
-                                IDE_SQ_DIST: 75**2},
-                         FALLEN: {MIN_SQ_DIST:75**2,
-                                   IDE_SQ_DIST:125**2},
-                         ARMS: {TIGHT_WIND: 0.0,
-                                WIDTH: 1.0,
-                                FUZZ: 1.0,
-                                SEP: 90},
-                         NUM_ARMS: 4,
-                         CORE_RAD: 0.3,
-                         CORE_STARS: 0.3,
-                         STARS_MIN_DIST:1.0
-                         }
-                         
-# Snowflake (6)
-shapes['snowflake6'] = {SHAPE_NAME: 'Snowflake (6)',
-                         MIN_STARS: 1,
-                         COUNTRY: {MIN_SQ_DIST: 50**2,
-                                IDE_SQ_DIST: 75**2},
-                         FALLEN: {MIN_SQ_DIST:75**2,
-                                   IDE_SQ_DIST:125**2},
-                         ARMS: {TIGHT_WIND: 0.0,
-                                WIDTH: 1.0,
-                                FUZZ: 1.0,
-                                SEP: 60},
-                         NUM_ARMS: 6,
-                         CORE_RAD: 0.3,
-                         CORE_STARS: 0.3,
-                         STARS_MIN_DIST:1.0
-                         }
-
-# Cross
-shapes['cross'] = {SHAPE_NAME: 'Cross',
-                         MIN_STARS: 1,
-                         COUNTRY: {MIN_SQ_DIST: 50**2,
-                                IDE_SQ_DIST: 75**2},
-                         FALLEN: {MIN_SQ_DIST:75**2,
-                                   IDE_SQ_DIST:125**2},
-                         ARMS: {TIGHT_WIND: 0.0,
-                                WIDTH: 20.0,
-                                FUZZ: 20.0,
-                                SEP: 90},
-                         NUM_ARMS: 4,
-                         CORE_RAD: 0.2,
-                         CORE_STARS: 0.2,
-                         STARS_MIN_DIST:1.0
-                         }
-
 
 # Barred Spiral with Ring
 shapes['barred_sba'] = {SHAPE_NAME: 'Barred Spiral (SBa)',
@@ -327,6 +224,76 @@ shapes['cluster6'] = {SHAPE_NAME: 'Cluster (6)',
                                 width = 0.50,
                                 offset = 0.2
                          )
+                         }
+
+# Cross
+shapes['cross'] = {SHAPE_NAME: 'Cross',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 20.0,
+                                FUZZ: 20.0,
+                                SEP: 90},
+                         NUM_ARMS: 4,
+                         CORE_RAD: 0.2,
+                         CORE_STARS: 0.2,
+                         STARS_MIN_DIST:1.0
+                         }
+
+
+# Dragon Tail
+shapes['dragon_tail'] = {SHAPE_NAME: 'Dragon Tail',
+                         MIN_STARS: 200,
+                         COUNTRY: {MIN_SQ_DIST: 70**2,
+                                IDE_SQ_DIST: 120**2},
+                         FALLEN: {MIN_SQ_DIST:125**2,
+                                   IDE_SQ_DIST:175**2},
+                         ARMS: {TIGHT_WIND: 1.0,
+                                WIDTH: 80.0,
+                                FUZZ: 120.0,
+                                SEP: 45.3},
+                         NUM_ARMS: 1,
+                         CORE_RAD: 0.25,
+                         CORE_STARS: 0.25,
+                         STARS_MIN_DIST:15.0
+                         }
+
+
+# Fan (3)
+shapes['fan3'] = {SHAPE_NAME: 'Fan (3)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.2,
+                                WIDTH: 30.0,
+                                FUZZ: 10.0,
+                                SEP: 120},
+                         NUM_ARMS: 3,
+                         CORE_RAD: 0.1,
+                         CORE_STARS: 0.1,
+                         STARS_MIN_DIST:15.0
+                         }
+
+# Fan (4)
+shapes['fan4'] = {SHAPE_NAME: 'Fan (4)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.2,
+                                WIDTH: 30.0,
+                                FUZZ: 10.0,
+                                SEP: 90},
+                         NUM_ARMS: 4,
+                         CORE_RAD: 0.1,
+                         CORE_STARS: 0.1,
+                         STARS_MIN_DIST:15.0
                          }
 
 #firewheel
@@ -430,6 +397,41 @@ shapes['irregular_3'] = {SHAPE_NAME: 'Irregular (3)',
                                 offset = -1.30
                          )
                          }
+
+# Snowflake (4)
+shapes['snowflake4'] = {SHAPE_NAME: 'Snowflake (4)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 1.0,
+                                FUZZ: 1.0,
+                                SEP: 90},
+                         NUM_ARMS: 4,
+                         CORE_RAD: 0.3,
+                         CORE_STARS: 0.3,
+                         STARS_MIN_DIST:1.0
+                         }
+                         
+# Snowflake (6)
+shapes['snowflake6'] = {SHAPE_NAME: 'Snowflake (6)',
+                         MIN_STARS: 1,
+                         COUNTRY: {MIN_SQ_DIST: 50**2,
+                                IDE_SQ_DIST: 75**2},
+                         FALLEN: {MIN_SQ_DIST:75**2,
+                                   IDE_SQ_DIST:125**2},
+                         ARMS: {TIGHT_WIND: 0.0,
+                                WIDTH: 1.0,
+                                FUZZ: 1.0,
+                                SEP: 60},
+                         NUM_ARMS: 6,
+                         CORE_RAD: 0.3,
+                         CORE_STARS: 0.3,
+                         STARS_MIN_DIST:1.0
+                         }
+
 
 # Square shape
 shapes['square'] = {SHAPE_NAME: 'Square',

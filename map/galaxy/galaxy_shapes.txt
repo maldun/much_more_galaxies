@@ -1,0 +1,674 @@
+elliptical = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    
+}
+ring = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.4
+        
+    }
+    
+}
+spiral_2 = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 1.1
+        width = 80.0
+        fuzz = 25.0
+        seperation = 180.0
+        
+    }
+    
+}
+spiral_3 = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 3
+    arms = {
+        tightness_winding = 0.85
+        width = 60.0
+        fuzz = 15.0
+        seperation = 120.0
+        
+    }
+    
+}
+spiral_4 = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.7
+        width = 40.0
+        fuzz = 10.0
+        seperation = 90.0
+        
+    }
+    
+}
+spiral_6 = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 6
+    arms = {
+        tightness_winding = 0.5
+        width = 20.0
+        fuzz = 7.0
+        seperation = 60.0
+        
+    }
+    
+}
+bar = {
+    core_radius_perc = 0.22
+    num_stars_core_perc = 0.0
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.3
+        width = 100.0
+        fuzz = 30.0
+        seperation = 180.0
+        
+    }
+    
+}
+starburst = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0
+    stars_min_dist = 8.5
+    countries = {
+        ideal_sq_dist_between = 4225
+        min_sq_dist_between = 2025
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 12100
+        min_sq_dist_between = 4225
+        
+    }
+    num_arms = 3
+    arms = {
+        tightness_winding = 0.6
+        width = 35.0
+        fuzz = 12.0
+        seperation = 80.0
+        
+    }
+    
+}
+cartwheel = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0
+    stars_min_dist = 7.0
+    countries = {
+        ideal_sq_dist_between = 3600
+        min_sq_dist_between = 1600
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 10000
+        min_sq_dist_between = 3600
+        
+    }
+    num_arms = 3
+    arms = {
+        tightness_winding = 1.02
+        width = 45.0
+        fuzz = 20.0
+        seperation = 120.0
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.32
+        
+    }
+    
+}
+spoked = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0
+    stars_min_dist = 8.0
+    countries = {
+        ideal_sq_dist_between = 4225
+        min_sq_dist_between = 2025
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 12100
+        min_sq_dist_between = 4225
+        
+    }
+    num_arms = 7
+    arms = {
+        tightness_winding = 0.0
+        width = 22.0
+        fuzz = 10.0
+        seperation = 51.4
+        
+    }
+    
+}
+dragon_tail = {
+    core_radius_perc = 0.25
+    num_stars_core_perc = 0.25
+    stars_min_dist = 15.0
+    countries = {
+        ideal_sq_dist_between = 14400
+        min_sq_dist_between = 4900
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 30625
+        min_sq_dist_between = 15625
+        
+    }
+    num_arms = 1
+    arms = {
+        tightness_winding = 1.0
+        width = 80.0
+        fuzz = 120.0
+        seperation = 45.3
+        
+    }
+    
+}
+fan3 = {
+    core_radius_perc = 0.1
+    num_stars_core_perc = 0.1
+    stars_min_dist = 15.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 3
+    arms = {
+        tightness_winding = 0.2
+        width = 30.0
+        fuzz = 10.0
+        seperation = 120
+        
+    }
+    
+}
+fan4 = {
+    core_radius_perc = 0.1
+    num_stars_core_perc = 0.1
+    stars_min_dist = 15.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.2
+        width = 30.0
+        fuzz = 10.0
+        seperation = 90
+        
+    }
+    
+}
+snowflake4 = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0.3
+    stars_min_dist = 1.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.0
+        width = 1.0
+        fuzz = 1.0
+        seperation = 90
+        
+    }
+    
+}
+snowflake6 = {
+    core_radius_perc = 0.3
+    num_stars_core_perc = 0.3
+    stars_min_dist = 1.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 6
+    arms = {
+        tightness_winding = 0.0
+        width = 1.0
+        fuzz = 1.0
+        seperation = 60
+        
+    }
+    
+}
+cross = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.2
+    stars_min_dist = 1.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.0
+        width = 20.0
+        fuzz = 20.0
+        seperation = 90
+        
+    }
+    
+}
+barred_sba = {
+    core_radius_perc = 0.15
+    num_stars_core_perc = 0.0
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.6
+        width = 60.0
+        fuzz = 20.0
+        seperation = 180
+        
+    }
+    
+}
+barred_sbc = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.1
+    stars_min_dist = 5.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.6
+        width = 45.0
+        fuzz = 5.0
+        seperation = 180
+        
+    }
+    
+}
+cluster2 = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.02
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.2
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.0
+        width = 90.0
+        fuzz = 10.0
+        seperation = 180
+        
+    }
+    
+}
+cluster4 = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.02
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.2
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.0
+        width = 45.0
+        fuzz = 10.0
+        seperation = 90
+        
+    }
+    
+}
+cluster6 = {
+    core_radius_perc = 0.2
+    num_stars_core_perc = 0.02
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 0.5
+        offset = 0.2
+        
+    }
+    num_arms = 6
+    arms = {
+        tightness_winding = 0.0
+        width = 30.0
+        fuzz = 10.0
+        seperation = 60
+        
+    }
+    
+}
+firewheel = {
+    core_radius_perc = 0.45
+    num_stars_core_perc = 0.05
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    num_arms = 12
+    arms = {
+        tightness_winding = 0.7
+        width = 2.0
+        fuzz = 5.0
+        seperation = 30
+        
+    }
+    
+}
+gear = {
+    core_radius_perc = 0.5
+    num_stars_core_perc = 0.1
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 1.0
+        offset = -0.6
+        
+    }
+    num_arms = 6
+    arms = {
+        tightness_winding = 0.0
+        width = 30.0
+        fuzz = 1.0
+        seperation = 60
+        
+    }
+    
+}
+irregular_1 = {
+    core_radius_perc = 0.7
+    num_stars_core_perc = 0.6
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 1.5
+        offset = -1.3
+        
+    }
+    num_arms = 1
+    arms = {
+        tightness_winding = 0.6
+        width = 6.0
+        fuzz = 30.0
+        seperation = 180
+        
+    }
+    
+}
+irregular_2 = {
+    core_radius_perc = 0.7
+    num_stars_core_perc = 0.6
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 1.5
+        offset = -1.2
+        
+    }
+    num_arms = 2
+    arms = {
+        tightness_winding = 0.3
+        width = 6.0
+        fuzz = 30.0
+        seperation = 60
+        
+    }
+    
+}
+irregular_3 = {
+    core_radius_perc = 0.4
+    num_stars_core_perc = 0.3
+    stars_min_dist = 10.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 1.5
+        offset = -1.3
+        
+    }
+    num_arms = 4
+    arms = {
+        tightness_winding = 0.2
+        width = 20.0
+        fuzz = 30.0
+        seperation = 70
+        
+    }
+    
+}
+square = {
+    core_radius_perc = 0.5
+    num_stars_core_perc = 0.1
+    stars_min_dist = 2.0
+    countries = {
+        ideal_sq_dist_between = 5625
+        min_sq_dist_between = 2500
+        
+    }
+    fallen_empires = {
+        ideal_sq_dist_between = 15625
+        min_sq_dist_between = 5625
+        
+    }
+    ring = {
+        width = 1.5
+        offset = -0.2
+        
+    }
+    
+}

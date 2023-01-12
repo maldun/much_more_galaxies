@@ -56,8 +56,6 @@ if __name__ == "__main__":
     to_merge = [ORG_GALAXY_SHAPES, NEW_GALAXY_SHAPES]
     merge_galaxy_shapes(to_merge, os.path.join(MAIN_MOD, GALAXY_PATH, SHAPE_FILE))
     # write out scenarios
-    import pdb; pdb.set_trace()
-
     sm.write_scenarios()
     # write localisation
     os.makedirs(MOD_LOC_PATH, exist_ok=True)

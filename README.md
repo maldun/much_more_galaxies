@@ -1,8 +1,9 @@
-# Much More Galaxies
+# Much More Galaxy Shapes
 
-Provides more Galaxies for Stellaris. Supports Galaxy sizes from 25-2500 and adds much more shapes.
+Provides more Galaxies for Stellaris. Adds much more shapes.
 
-This mod does not alter appearance only adds more shapes and sizes.
+This mod does not alter appearance only adds more shapes. This mod is intended to be compatible with size modes and is technically a submod of
+[Much More Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=2916468366)
 
 The following shapes are added:
 
@@ -24,7 +25,7 @@ The following shapes are added:
 \*) inspired by [More Natural Looking Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=1115205349)
 \*\*) inspired by [Galaxy Shapes](https://steamcommunity.com/sharedfiles/filedetails/?id=2895850700)
 
-## Version V 0.0.1
+## Version V 0.0.2
 
 ## Credits
 

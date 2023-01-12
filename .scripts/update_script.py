@@ -30,8 +30,9 @@ for identifier, val in par.old_shape_minima.items():
     gm.update_min(identifier, val)
 
 # Update new scenarios
-for key, settings in par.scenarios.items():
-    sm.add_scenario(key, settings)
+if ADD_SCENARIOS == True:
+    for key, settings in par.scenarios.items():
+        sm.add_scenario(key, settings)
 
 # Update Shapes
 for shape_id, shape_dic in par.shapes.items():
@@ -48,15 +49,14 @@ sm.register_shapes(gm.get_shape_minima())
 if __name__ == "__main__":
     #create_dirs
     os.makedirs(os.path.join(MAIN_MOD, GALAXY_PATH), exist_ok=True)
+    os.makedirs(os.path.join(MAIN_MOD, SCENARIO_PATH), exist_ok=True)
     # write out new shapes
     gm.write_shapes(NEW_GALAXY_SHAPES)
     # update shapes
     to_merge = [ORG_GALAXY_SHAPES, NEW_GALAXY_SHAPES]
     merge_galaxy_shapes(to_merge, os.path.join(MAIN_MOD, GALAXY_PATH, SHAPE_FILE))
     # write out scenarios
-    if ADD_SCENARIOS == True:
-        os.makedirs(os.path.join(MAIN_MOD, SCENARIO_PATH), exist_ok=True)
-        sm.write_scenarios()
+    sm.write_scenarios()
     # write localisation
     os.makedirs(MOD_LOC_PATH, exist_ok=True)
     gm.write_localisation(os.path.join(MOD_LOC_PATH, "mmg_l_english.yml"))

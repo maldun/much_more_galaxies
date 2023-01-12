@@ -2,7 +2,7 @@ import os
 # Absolute paths
 STELLARIS_PATH = "/home/maldun/.local/share/Steam/steamapps/common/Stellaris/"
 STELLARIS_MOD_PATH = "/home/maldun/.local/share/Paradox Interactive/Stellaris/mod/"
-MAIN_MOD = os.path.join(STELLARIS_MOD_PATH, "much_more_galaxies")
+MAIN_MOD = os.path.join(STELLARIS_MOD_PATH, "much_more_shapes")
 # Relattive paths
 GALAXY_PATH = "map/galaxy"
 SCENARIO_PATH = "map/setup_scenarios"

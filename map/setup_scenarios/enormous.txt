@@ -1,6 +1,6 @@
 setup_scenario = {
     name = "Enormous"
-    priority = 9
+    priority = 13
     num_stars = 1750
     radius = 470
     num_empires = {

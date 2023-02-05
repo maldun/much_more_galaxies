@@ -10,9 +10,9 @@ setup_scenario = {
     }
     num_empire_default = 1
     fallen_empire_default = 0
-    fallen_empire_max = 1
+    fallen_empire_max = 0
     marauder_empire_default = 0
-    marauder_empire_max = 1
+    marauder_empire_max = 0
     advanced_empire_default = 1
     colonizable_planet_odds = 1.0
     primitive_odds = 1.0

@@ -1,6 +1,6 @@
 setup_scenario = {
     name = "Large"
-    priority = 6
+    priority = 9
     num_stars = 800
     radius = 450
     num_empires = {

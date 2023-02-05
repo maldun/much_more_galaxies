@@ -1,6 +1,6 @@
 setup_scenario = {
     name = "Collosal"
-    priority = 11
+    priority = 15
     num_stars = 2500
     radius = 477
     num_empires = {

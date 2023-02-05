@@ -9,7 +9,7 @@
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 2
@@ -33,7 +33,7 @@ barred_sbc = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 2
@@ -57,7 +57,7 @@ cluster2 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -86,7 +86,7 @@ cluster3 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -115,7 +115,7 @@ cluster4 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -144,7 +144,7 @@ cluster6 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -173,7 +173,7 @@ cluster8 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -202,7 +202,7 @@ cross = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 4
@@ -226,7 +226,7 @@ disk = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 30625
-        min_sq_dist_between = 15625
+        min_sq_dist_between = 14400
         
     }
     num_arms = 1
@@ -250,7 +250,7 @@ dragon_tail = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 30625
-        min_sq_dist_between = 15625
+        min_sq_dist_between = 14400
         
     }
     num_arms = 1
@@ -274,7 +274,7 @@ fan3 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 3
@@ -298,7 +298,7 @@ fan4 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 4
@@ -322,7 +322,7 @@ firewheel = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 12
@@ -346,7 +346,7 @@ gear = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -375,7 +375,7 @@ half_circle = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -404,7 +404,7 @@ holy_cross = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -433,7 +433,7 @@ irregular_1 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -462,7 +462,7 @@ irregular_2 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -491,7 +491,7 @@ irregular_3 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {
@@ -520,7 +520,7 @@ pulsar = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 4
@@ -544,7 +544,7 @@ radio = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 2
@@ -568,7 +568,7 @@ snowflake4 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 4
@@ -592,7 +592,7 @@ snowflake6 = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     num_arms = 6
@@ -616,7 +616,7 @@ square = {
     }
     fallen_empires = {
         ideal_sq_dist_between = 15625
-        min_sq_dist_between = 5625
+        min_sq_dist_between = 3600
         
     }
     ring = {

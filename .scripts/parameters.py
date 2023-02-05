@@ -1,6 +1,51 @@
 from defines import *
 # Scenario Settings
 scenarios = {}
+scenarios['big'] = dict(
+                 num_stars = 700,
+                 radius = 425,
+                 num_empires =  {"min" :0, "max":20},
+                 num_empire_default = 10,
+                 fallen_empire_default =  2,
+                 fallen_empire_max = 4,
+                 marauder_empire_default = 2,
+                 marauder_empire_max = 4,
+                 advanced_empire_default = 3,
+                 cluster_radius = 130,
+                 cluster_distance_from_core = 275,
+                 _base = 'medium'
+                 )
+
+scenarios['average'] = dict(
+                 num_stars = 500,
+                 radius = 350,
+                 num_empires =  {"min" :0, "max":16},
+                 num_empire_default = 6,
+                 fallen_empire_default =  2,
+                 fallen_empire_max = 3,
+                 marauder_empire_default = 2,
+                 marauder_empire_max = 3,
+                 advanced_empire_default = 2,
+                 cluster_radius = 115,
+                 cluster_distance_from_core = 200,
+                 _base = 'medium'
+                 )
+
+scenarios['dwarf'] = dict(
+                 num_stars = 300,
+                 radius = 250,
+                 num_empires =  {"min" :0, "max":10},
+                 num_empire_default = 5,
+                 fallen_empire_default =  1,
+                 fallen_empire_max = 2,
+                 marauder_empire_default = 1,
+                 marauder_empire_max = 2,
+                 advanced_empire_default = 1,
+                 cluster_radius = 100,
+                 cluster_distance_from_core = 150,
+                 _base = 'small'
+                 )
+
 scenarios['mini'] = dict(
                  num_stars = 100,
                  radius = 150,
@@ -45,6 +90,24 @@ scenarios['pico'] = dict(
                  cluster_distance_from_core = 30,
                  _base = 'tiny'
                  )
+
+scenarios['vast'] = dict(
+                       num_stars = 900,
+                       radius = 450,
+                       num_empires = dict(min = 0, max = 28),
+                       num_empire_default = 14,
+                       fallen_empire_default =  4,
+                       fallen_empire_max = 5,
+                       marauder_empire_default = 3,
+                       marauder_empire_max = 4,
+                       advanced_empire_default = 4,
+                       cluster_radius = 150,
+                       cluster_distance_from_core = 300,
+                       num_nebulas = 9,
+                       nebula_size = 60,
+                       nebula_min_dist = 200,
+                       _base = 'huge',
+                       )
 
 scenarios['massive'] = dict(
                        num_stars = 1250,

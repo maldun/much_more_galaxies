@@ -5,7 +5,7 @@ setup_scenario = {
     radius = 150
     num_empires = {
         min = 0
-        max = 3
+        max = 5
         
     }
     num_empire_default = 1
